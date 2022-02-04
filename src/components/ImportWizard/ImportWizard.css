@@ -5,3 +5,9 @@
 #crane-import-wizard .pf-c-wizard__main-body {
   height: 100%;
 }
+
+#crane-import-wizard .pf-c-code-editor,
+#crane-import-wizard .pf-c-code-editor__main,
+#crane-import-wizard .react-monaco-editor-container {
+  height: 100%;
+}

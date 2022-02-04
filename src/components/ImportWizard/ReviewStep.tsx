@@ -1,5 +1,5 @@
 import * as React from 'react';
-import useSize from '@react-hook/size';
+// import useSize from '@react-hook/size';
 import {
   TextContent,
   Text,
@@ -29,7 +29,7 @@ export const ReviewStep: React.FunctionComponent = () => {
   const selectedEditorFormField = forms.review.fields[selectedEditorKey];
 
   const editorContainerRef = React.useRef<HTMLDivElement>(null);
-  const editorContainerHeight = useSize(editorContainerRef)[1];
+  // const editorContainerHeight = useSize(editorContainerRef)[1];
 
   return (
     <Flex direction={{ default: 'column' }} style={{ height: '100%' }}>
@@ -66,7 +66,7 @@ export const ReviewStep: React.FunctionComponent = () => {
           code={selectedEditorFormField.value}
           onChange={selectedEditorFormField.setValue}
           language={Language.yaml}
-          height={`${editorContainerHeight - 60}px`}
+          // height={`${editorContainerHeight - 60}px`}
         />
       </div>
     </Flex>
